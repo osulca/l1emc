@@ -4,7 +4,7 @@ class Autor{
     private $email;
     private $genero;
 
-    public function __construct($nombre, $email, $genero)
+    public function __construct(String $nombre, String $email, String $genero)
     {
         $this->nombre = $nombre;
         $this->email = $email;
@@ -39,5 +39,8 @@ class Autor{
         $this->genero = $genero;
     }
 
-
+    public function __toString(){
+        return $this->nombre."<br>".
+                "email: ".$this->email;
+    }
 }

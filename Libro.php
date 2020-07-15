@@ -7,7 +7,7 @@ class Libro
     private $autor;
     private $precio;
 
-    public function __construct($titulo, $autor, $precio)
+    public function __construct(String $titulo,Autor $autor, String $precio)
     {
         $this->titulo = $titulo;
         $this->autor = $autor;
@@ -19,7 +19,7 @@ class Libro
         return $this->titulo;
     }
 
-    public function setTitulo($titulo): void
+    public function setTitulo(String $titulo): void
     {
         $this->titulo = $titulo;
     }
@@ -29,7 +29,7 @@ class Libro
         return $this->autor;
     }
 
-    public function setAutor($autor): void
+    public function setAutor(String $autor): void
     {
         $this->autor = $autor;
     }
@@ -39,7 +39,7 @@ class Libro
         return $this->precio;
     }
 
-    public function setPrecio($precio): void
+    public function setPrecio(String $precio): void
     {
         $this->precio = $precio;
     }
