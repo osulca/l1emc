@@ -1,4 +1,5 @@
 <?php
+
 interface TipoPagoInterface{
     public function pagarAhora(): String;
     public function procedimientoPago(): void;
